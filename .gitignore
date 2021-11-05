@@ -3,3 +3,4 @@ node_modules
 node_modules
 cypress/reports
 cypress/screenshots
+package-lock.json
