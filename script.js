@@ -12,7 +12,11 @@ function wordGen(word) {
 
 function createLetter() {
   result.innerHTML = '';
-  const word = inputLetter.value.split(' ');
+  let word = inputLetter.value.split(' ');
+  word = word.filter((i) => i !== '');
+  if (word.length === 0) {
+    result.innerText = 'por favor, digite o conteúdo da carta.';
+  }
   word.forEach(wordGen);
 }
 

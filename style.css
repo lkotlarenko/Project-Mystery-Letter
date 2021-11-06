@@ -35,4 +35,48 @@ header h2 {
 #criar-carta {
   width: 70px;
   font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.small {
+  font-size: 1rem;
+}
+
+.medium {
+  font-size: 1.2rem;
+}
+
+.big {
+  font-size: 1.3rem;
+}
+
+.red {
+  background-color: red;
+  color: black;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.pink {
+  background-color: palevioletred;
+  color: white;
+}
+
+#carta-gerada {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#carta-gerada span {
+  padding: 3px 4px;
 }
