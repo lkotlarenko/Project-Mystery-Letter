@@ -6,38 +6,74 @@
 body {
   font-size: 16px;
   font-family: Roboto, Segoe UI, sans-serif;
+  background: whitesmoke;
+}
+
+@media only screen and ( min-width : 992px ) {
+
+  body {
+    font-size: 22px;
+  }
 }
 
 header h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 20px 0;
   font-weight: 520;
 }
 
-#app {
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#app , .container {
   display: flex;
   justify-content: center;
 }
 
 .container {
-  justify-content: center;
-  display: flex;
   width: 80%;
   flex-direction: column;
   align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 15px 0;
 }
 
-.container input {
+#carta-texto {
   flex-grow: 1;
   font-size: 1.4rem;
   margin: 0 0 15px;
+  border: 1px solid black;
 }
 
 #criar-carta {
   width: 70px;
   font-size: 1.2rem;
   margin-bottom: 10px;
+  background-color: rgb(251, 251, 251);
+  border-radius: 7px;
+}
+
+#criar-carta:hover , #carta-texto:hover {
+  transform: scale(1.05);
+}
+
+#criar-carta:active , #carta-texto:active {
+  transform: scale(0.95);
+  border: 2px solid teal;
+  background-color: whitesmoke;
+}
+
+#carta-texto::placeholder {
+  text-align: center;
 }
 
 .medium {
@@ -61,19 +97,20 @@ header h2 {
   font-weight: 700;
 }
 
+.magazine1 , .magazine2 {
+  font-family: Verdana, sans-serif;
+  font-weight: 900;
+}
+
 .magazine1 {
   background-color: teal;
   color: white;
-  font-family: Verdana, sans-serif;
-  font-weight: 900;
   text-transform: uppercase;
 }
 
 .magazine2 {
   background-image: url('images/pink-pattern.png');
   color: fuchsia;
-  font-family: Verdana, sans-serif;
-  font-weight: 900;
 }
 
 .rotateleft {
@@ -95,7 +132,7 @@ header h2 {
 #carta-gerada {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
