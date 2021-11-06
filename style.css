@@ -22,9 +22,17 @@ header h2 {
   justify-content: center;
   display: flex;
   width: 80%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container input {
   flex-grow: 1;
+  font-size: 1.4rem;
+  margin: 0 0 15px;
+}
+
+#criar-carta {
+  width: 70px;
   font-size: 1.2rem;
 }
