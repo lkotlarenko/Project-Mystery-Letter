@@ -10,6 +10,10 @@ function wordGen(word) {
   result.appendChild(nWord);
 }
 
-createLetter();
+function createLetter() {
+  result.innerHTML = '';
+  const word = inputLetter.value.split(' ');
+  word.forEach(wordGen);
+}
 
 button.addEventListener('click', createLetter);
