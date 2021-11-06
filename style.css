@@ -5,12 +5,14 @@
 
 body {
   font-size: 16px;
+  font-family: Roboto, Segoe UI, sans-serif;
 }
 
 header h2 {
   text-align: center;
   font-size: 2rem;
   padding: 20px 0;
+  font-weight: 520;
 }
 
 #app {
@@ -92,11 +94,24 @@ header h2 {
 
 #carta-gerada {
   display: flex;
-  align-items: baseline;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 #carta-gerada span {
-  padding: 3px 4px;
+  padding: 1px 3px;
+}
+
+#word-counter {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 5px;
+  font-family: Segoe UI, sans-serif;
+  font-size: 1.2rem;
+  justify-content: space-between;
+}
+
+#carta-contador {
+  padding-left: 5px;
 }

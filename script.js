@@ -1,6 +1,8 @@
 const result = document.getElementById('carta-gerada');
 const inputLetter = document.getElementById('carta-texto');
 const button = document.getElementById('criar-carta');
+const counter = document.getElementById('carta-contador');
+const hiddenSection = document.getElementById('word-counter');
 const style = [
   'medium',
   'big',
@@ -22,9 +24,11 @@ function wordGen(word) {
 }
 
 function createLetter() {
+  hiddenSection.style.display = 'flex';
   result.innerHTML = '';
   let word = inputLetter.value.split(' ');
   word = word.filter((i) => i !== '');
+  counter.innerText = word.length;
   if (word.length === 0) {
     result.innerText = 'por favor, digite o conteúdo da carta.';
   }
