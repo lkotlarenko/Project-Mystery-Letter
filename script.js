@@ -1,7 +1,18 @@
 const result = document.getElementById('carta-gerada');
 const inputLetter = document.getElementById('carta-texto');
 const button = document.getElementById('criar-carta');
-const style = ['small', 'medium', 'big', 'red', 'green', 'black', 'pink'];
+const style = [
+  'medium',
+  'big',
+  'reallybig',
+  'newspaper',
+  'magazine1',
+  'magazine2',
+  'rotateleft',
+  'rotateright',
+  'skewleft',
+  'skewright',
+];
 
 function wordGen(word) {
   const nWord = document.createElement('span');
