@@ -55,7 +55,7 @@ footer {
 }
 
 #criar-carta {
-  width: 70px;
+  width: 77px;
   font-size: 1.2rem;
   margin-bottom: 10px;
   background-color: rgb(251, 251, 251);
@@ -151,4 +151,26 @@ footer {
 
 #carta-contador {
   padding-left: 5px;
+}
+
+#hint {
+  padding: 15px 0;
+  text-align: center;
+  display: none;
+}
+
+@keyframes fade {
+
+  0% , 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.hint-fade {
+  opacity: 1;
+  animation: fade 3s linear;
 }
