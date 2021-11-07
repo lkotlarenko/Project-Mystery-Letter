@@ -82,7 +82,14 @@ function syncSave() {
   }
 }
 
+function inputEnter(event) {
+  if (event.key === 'Enter') {
+    createLetter();
+  }
+}
+
 inputLetter.addEventListener('input', renameButton);
+inputLetter.addEventListener('keyup', inputEnter);
 button.addEventListener('click', createLetter);
 button.addEventListener('dblclick', showHint);
 

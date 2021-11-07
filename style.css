@@ -1,3 +1,14 @@
+@keyframes fade {
+
+  0% , to {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,29 +55,31 @@ footer {
   align-items: center;
   background: white;
   border-radius: 10px;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 #carta-texto {
-  flex-grow: 1;
+  margin: 15px 15px 0;
   font-size: 1.4rem;
-  margin: 0 0 15px;
   border: 1px solid black;
+  min-width: 150px;
+  width: 85%;
+  border-radius: 3px;
 }
 
 #criar-carta {
-  width: 77px;
+  width: 79px;
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin: 15px 5px;
   background-color: rgb(251, 251, 251);
   border-radius: 7px;
 }
 
-#criar-carta:hover , #carta-texto:hover {
+#carta-texto:hover , #criar-carta:hover {
   transform: scale(1.05);
 }
 
-#criar-carta:active , #carta-texto:active {
+#carta-texto:active , #criar-carta:active {
   transform: scale(0.95);
   border: 2px solid teal;
   background-color: whitesmoke;
@@ -134,10 +147,12 @@ footer {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  width: 85%;
 }
 
 #carta-gerada span {
   padding: 1px 3px;
+  margin: 0 3px;
 }
 
 #word-counter {
@@ -157,17 +172,6 @@ footer {
   padding: 15px 0;
   text-align: center;
   display: none;
-}
-
-@keyframes fade {
-
-  0% , 100% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
 }
 
 .hint-fade {
